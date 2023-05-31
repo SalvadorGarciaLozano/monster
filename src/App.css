@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white; 
+}
+.tittle{
+  text-align: center;
+  font-size: 45px;
+  -webkit-text-stroke: 2px aqua;
+}
+body{
+  background-color:#664f4f;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.609)), url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/01/monster-hunter-world-iceborne.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.active{
+  color: white !important;
+  border-radius: 100px;
+  background-color: rgb(24, 56, 56);
+  padding: 10px;
+}
+
+.MuiPaper-root{
+  background-color: #695252 !important;
+}
+.cnt {
+  display: flex !important;
+  justify-content: center;
+  gap: 20px;
+}
+h2#NewCat{
+  /* padding: 20px; */
+  text-align: center;
+  padding-bottom: 15px;
+}
