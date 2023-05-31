@@ -16,4 +16,6 @@ export interface ICategoria {
     br_3: string;
     peso: number;
     daño: string;
+    elemento: string;
+    debilidad: string;
 }

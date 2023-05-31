@@ -31,6 +31,8 @@ export const ServiciosPage = () => {
             <th>Nombre</th>
             <th>Peso</th>
             <th>Daño</th>
+            <th>elemento</th>
+            <th>debilidad</th>
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
@@ -38,6 +40,8 @@ export const ServiciosPage = () => {
               <td key={categoria.name}>{categoria.monstruos}</td>
               <td>{categoria.peso}</td>
               <td>{categoria.daño}</td>
+              <td>{categoria.elemento}</td>
+              <td>{categoria.debilidad}</td>
               {/* <img src={categoria.logo} alt="" /> */}
               </tr>
               </>
@@ -69,6 +73,22 @@ export const ServiciosPage = () => {
               {...register('daño')}
               // id='nombre'
               label='daño'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('elemento')}
+              // id='nombre'
+              label='elemento'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('debilidad')}
+              // id='nombre'
+              label='debilidad'
               type='string'
               sx={{ width: '60%' }}
             >
