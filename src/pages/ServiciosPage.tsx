@@ -27,23 +27,48 @@ export const ServiciosPage = () => {
     <>
     <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <Grid item xs={5} sx={{ backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
+        <table border={2}>
+            <th>Nombre</th>
+            <th>Peso</th>
+            <th>Daño</th>
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
-              <li key={categoria.monstruos}>{categoria.monstruos}</li>
+              <tr>
+              <td key={categoria.name}>{categoria.monstruos}</td>
+              <td>{categoria.peso}</td>
+              <td>{categoria.daño}</td>
               {/* <img src={categoria.logo} alt="" /> */}
+              </tr>
               </>
             ))
           }
+          </table>
         </Grid>
 
         <Grid item xs={5} sx={{ backgroundColor: 'aqua', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
-          <h2 id='NewCat'>Añadir nuevos datos</h2>
+          <h2 id='NewCat'>Añadir nuevos monstruos</h2>
           <form onSubmit={handleSubmit(onAddCategoria)} noValidate >
             <TextField
               {...register('monstruos')}
               // id='nombre'
               label='Nombre'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('peso')}
+              // id='nombre'
+              label='peso'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('daño')}
+              // id='nombre'
+              label='daño'
               type='string'
               sx={{ width: '60%' }}
             >

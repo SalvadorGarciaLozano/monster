@@ -5,8 +5,6 @@ import { NavBar } from './common/NavBar';
 import { Route, Routes } from 'react-router-dom';
 import { Main } from './components/Main';
 import { routes } from './common/routes';
-import { Spain } from './login/Spain';
-
 
 function App() {
   return (
@@ -26,8 +24,6 @@ function App() {
             </Route>
           ))
         }
-      <Route path='login/registros' element={<Spain/>}/>
-
       </Routes>
     </>
   );

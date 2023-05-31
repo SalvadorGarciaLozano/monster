@@ -1,7 +1,7 @@
 import { Button, Grid, TextField } from '@mui/material'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import { ServiciosPage } from '../pages'
 
 export const login = () => {
   return (
@@ -10,6 +10,7 @@ export const login = () => {
         width: "95%",
         padding: "3rem"
       }}>
+        <div className="cajacss">
         <Grid item xs={12}>
           <TextField
             label="usuario"
@@ -26,19 +27,21 @@ export const login = () => {
           />
         </Grid>
         <Grid item xs={12}>
+        <NavLink to={'/Servicios'}>
+
           <Button
             variant="contained"
-            color="primary"
+            color="secondary"
             type="submit"
             fullWidth
           >
-            <NavLink to={'registros'}>
               Iniciar Sesión
-            </NavLink>
           </Button>
+            </NavLink>
         </Grid>
+
+        </div>
       </Grid>
     </form>
     )
 }
-

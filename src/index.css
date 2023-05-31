@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.cajacss{
+  background-color: lightblue;
+  padding: 30px;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 10px;
+  
+}

@@ -14,4 +14,6 @@ export interface ICategoria {
     br_1: string;
     br_2: string;
     br_3: string;
+    peso: number;
+    daño: string;
 }
