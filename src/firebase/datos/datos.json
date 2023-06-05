@@ -1,0 +1,115 @@
+[
+    {
+        "monstruos": "valstrax",
+        "peso": 20.000,
+        "elemento": "draco",
+        "debilidad": "Agua",
+        "daño": "alto",
+        "especie": "dragon anciano" 
+    },
+
+    {
+        "monstruos": "fatalis",
+        "peso": 30.000,
+        "elemento": "fuego",
+        "debilidad": "draco",
+        "daño": "muy alto",
+        "especie": "dragon anciano" 
+    },
+    {
+        "monstruos": "gogzmazios",
+        "peso": 50.000,
+        "elemento": "fuego",
+        "debilidad": "Agua",
+        "daño": "muy alto",
+        "especie": "dragon anciano" 
+    },
+    {
+        "monstruos": "namielle",
+        "peso": 100.000,
+        "elemento": "agua",
+        "debilidad": "rayo",
+        "daño": "muy alto",
+        "especie": "dragon anciano" 
+    },
+    {
+        "monstruos": "rathalos",
+        "peso": 10.000,
+        "elemento": "fuego",
+        "debilidad": "draco",
+        "daño": "medio",
+        "especie": "volador" 
+    },
+    {
+        "monstruos": "diablos",
+        "peso": 20.000,
+        "elemento": "ninguno",
+        "debilidad": "Agua",
+        "daño": "alto",
+        "especie": "volador" 
+    },
+    {
+        "monstruos": "narcagua",
+        "peso": 15.000,
+        "elemento": "agua",
+        "debilidad": "rayo",
+        "daño": "muy alto",
+        "especie": "volador" 
+    },
+    {
+        "monstruos": "legiana",
+        "peso": 12.000,
+        "elemento": "hielo",
+        "debilidad": "rayo",
+        "daño": "medio",
+        "especie": "volador" 
+    },
+    {
+        "monstruos": "jyratodus",
+        "peso": 14.000,
+        "elemento": "agua",
+        "debilidad": "rayo",
+        "daño": "bajo",
+        "especie": "acuatico" 
+    },
+    {
+        "monstruos": "plesioth",
+        "peso": 15.000,
+        "elemento": "agua",
+        "debilidad": "rayo",
+        "daño": "medio",
+        "especie": "acuatico" 
+    },
+    {
+        "monstruos": "zamtrios",
+        "peso": 40.000,
+        "elemento": "hielo",
+        "debilidad": "fuego",
+        "daño": "alto",
+        "especie": "acuatico" 
+    },
+    {
+        "monstruos": "glavenus",
+        "peso": 20.000,
+        "elemento": "fuego",
+        "debilidad": "Agua",
+        "daño": "muy alto",
+        "especie": "brutos" 
+    },
+    {
+        "monstruos": "deviljho",
+        "peso": 30.000,
+        "elemento": "ninguno",
+        "debilidad": "draco",
+        "daño": "muy alto",
+        "especie": "brutos" 
+    },
+    {
+        "monstruos": "zinogre",
+        "peso": 10.000,
+        "elemento": "rayo",
+        "debilidad": "fuego",
+        "daño": "alto",
+        "especie": "brutos" 
+    }
+]

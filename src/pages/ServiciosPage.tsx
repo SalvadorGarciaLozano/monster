@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { TextField } from '@mui/material';
 import { ICategoria } from '../interfaces/ICategoria';
-import { getDatos } from '../firebase/FBcategorias';
+import { cargarprod, getDatos } from '../firebase/FBcategorias';
 import { useForm } from 'react-hook-form';
 import { newCategoria } from '../firebase/FBcategorias';
 import './mh.css'
@@ -24,7 +24,8 @@ export const ServiciosPage = () => {
       })
   }, [])
   return (
-    <>
+    
+    <section>
     <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
         <Grid item xs={5} sx={{ backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
         <table border={2}>
@@ -33,6 +34,7 @@ export const ServiciosPage = () => {
             <th>Daño</th>
             <th>elemento</th>
             <th>debilidad</th>
+            <th>especie</th>
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
@@ -42,6 +44,7 @@ export const ServiciosPage = () => {
               <td>{categoria.daño}</td>
               <td>{categoria.elemento}</td>
               <td>{categoria.debilidad}</td>
+              <td>{categoria.especie}</td>
               {/* <img src={categoria.logo} alt="" /> */}
               </tr>
               </>
@@ -96,11 +99,11 @@ export const ServiciosPage = () => {
 
             <Button type='submit' variant="contained" sx={{ marginTop: '10px' }}>Añadir</Button>
           </form>
+          <Button variant='contained' onClick={cargarprod}>Cargar Datos</Button>
         </Grid>
       </Grid>
-
-    </>
+    </section>
   );
     
-}
+};
 export default ServiciosPage;

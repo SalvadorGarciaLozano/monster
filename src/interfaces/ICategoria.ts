@@ -14,8 +14,13 @@ export interface ICategoria {
     br_1: string;
     br_2: string;
     br_3: string;
-    peso: number;
-    daño: string;
-    elemento: string;
-    debilidad: string;
+    
 }
+// export interface IDatos{
+//     peso: number;
+//     daño: string;
+//     elemento: string;
+//     debilidad: string;
+//     especie: string;
+// }
+
