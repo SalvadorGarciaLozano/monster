@@ -5,7 +5,8 @@
         "elemento": "draco",
         "debilidad": "Agua",
         "daño": "alto",
-        "especie": "dragon anciano" 
+        "especie": "dragon anciano",
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
 
     {
@@ -14,7 +15,8 @@
         "elemento": "fuego",
         "debilidad": "draco",
         "daño": "muy alto",
-        "especie": "dragon anciano" 
+        "especie": "dragon anciano" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "gogzmazios",
@@ -22,7 +24,8 @@
         "elemento": "fuego",
         "debilidad": "Agua",
         "daño": "muy alto",
-        "especie": "dragon anciano" 
+        "especie": "dragon anciano" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "namielle",
@@ -30,7 +33,8 @@
         "elemento": "agua",
         "debilidad": "rayo",
         "daño": "muy alto",
-        "especie": "dragon anciano" 
+        "especie": "dragon anciano" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "rathalos",
@@ -38,7 +42,8 @@
         "elemento": "fuego",
         "debilidad": "draco",
         "daño": "medio",
-        "especie": "volador" 
+        "especie": "volador" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "diablos",
@@ -46,7 +51,8 @@
         "elemento": "ninguno",
         "debilidad": "Agua",
         "daño": "alto",
-        "especie": "volador" 
+        "especie": "volador" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "narcagua",
@@ -54,7 +60,8 @@
         "elemento": "agua",
         "debilidad": "rayo",
         "daño": "muy alto",
-        "especie": "volador" 
+        "especie": "volador" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "legiana",
@@ -62,7 +69,8 @@
         "elemento": "hielo",
         "debilidad": "rayo",
         "daño": "medio",
-        "especie": "volador" 
+        "especie": "volador",
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "jyratodus",
@@ -70,7 +78,8 @@
         "elemento": "agua",
         "debilidad": "rayo",
         "daño": "bajo",
-        "especie": "acuatico" 
+        "especie": "acuatico",
+        "logo": "https://images4.alphacoders.com/900/900718.jpg" 
     },
     {
         "monstruos": "plesioth",
@@ -78,7 +87,8 @@
         "elemento": "agua",
         "debilidad": "rayo",
         "daño": "medio",
-        "especie": "acuatico" 
+        "especie": "acuatico" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "zamtrios",
@@ -86,7 +96,8 @@
         "elemento": "hielo",
         "debilidad": "fuego",
         "daño": "alto",
-        "especie": "acuatico" 
+        "especie": "acuatico" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "glavenus",
@@ -94,7 +105,8 @@
         "elemento": "fuego",
         "debilidad": "Agua",
         "daño": "muy alto",
-        "especie": "brutos" 
+        "especie": "brutos" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "deviljho",
@@ -102,7 +114,8 @@
         "elemento": "ninguno",
         "debilidad": "draco",
         "daño": "muy alto",
-        "especie": "brutos" 
+        "especie": "brutos" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     },
     {
         "monstruos": "zinogre",
@@ -110,6 +123,7 @@
         "elemento": "rayo",
         "debilidad": "fuego",
         "daño": "alto",
-        "especie": "brutos" 
+        "especie": "brutos" ,
+        "logo": "https://images4.alphacoders.com/900/900718.jpg"
     }
 ]

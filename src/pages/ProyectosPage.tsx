@@ -19,10 +19,7 @@ export const ProyectosPage = () => {
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
-              <li key={categoria.name}>{categoria.name}</li>
-              <li key={categoria.name}>{categoria.ac_2}</li>
-              <li key={categoria.name}>{categoria.ac_3}</li>
-
+            
               </>
             ))
           }

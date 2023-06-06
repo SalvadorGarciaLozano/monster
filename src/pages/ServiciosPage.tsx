@@ -39,13 +39,13 @@ export const ServiciosPage = () => {
             categorias.slice(0, 100).map((categoria) => (
               <>
               <tr>
-              <td key={categoria.name}>{categoria.monstruos}</td>
+              <td>{categoria.monstruos}</td>
               <td>{categoria.peso}</td>
               <td>{categoria.daño}</td>
               <td>{categoria.elemento}</td>
               <td>{categoria.debilidad}</td>
               <td>{categoria.especie}</td>
-              {/* <img src={categoria.logo} alt="" /> */}
+              {<img src={categoria.logo} alt="" /> }
               </tr>
               </>
             ))
