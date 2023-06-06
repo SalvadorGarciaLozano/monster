@@ -3,3 +3,6 @@
     padding: 20px;
     justify-content: space-around;
 }
+.opcion:nth-child(4){
+    display: none;
+}

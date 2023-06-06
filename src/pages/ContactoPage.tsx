@@ -19,10 +19,6 @@ export const ContactoPage = () => {
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
-              <li key={categoria.name}>{categoria.vol_1}</li>
-              <li key={categoria.name}>{categoria.vol_2}</li>
-              <li key={categoria.name}>{categoria.vol_3}</li>
-
               </>
             ))
           }

@@ -26,8 +26,8 @@ export const ServiciosPage = () => {
   return (
     
     <section>
-    <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Grid item xs={5} sx={{ backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
+    <Grid container sx={{ display: 'flex', justifyContent: 'space-around'}}>
+        <Grid item xs={5} sx={{backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
         <table border={2}>
             <th>Nombre</th>
             <th>Peso</th>
@@ -53,7 +53,7 @@ export const ServiciosPage = () => {
           </table>
         </Grid>
 
-        <Grid item xs={5} sx={{ backgroundColor: 'aqua', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
+        <Grid item xs={5} sx={{ backgroundColor: 'aqua', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px',}}>
           <h2 id='NewCat'>Añadir nuevos monstruos</h2>
           <form onSubmit={handleSubmit(onAddCategoria)} noValidate >
             <TextField
@@ -92,6 +92,22 @@ export const ServiciosPage = () => {
               {...register('debilidad')}
               // id='nombre'
               label='debilidad'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('especie')}
+              // id='nombre'
+              label='especie'
+              type='string'
+              sx={{ width: '60%' }}
+            >
+            </TextField>
+            <TextField
+              {...register('logo')}
+              // id='nombre'
+              label='url imagen'
               type='string'
               sx={{ width: '60%' }}
             >

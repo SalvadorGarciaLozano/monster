@@ -12,7 +12,7 @@ export const db = getFirestore()
 export const getCategorias = async ():Promise<ICategoria[]> => {
     let categorias: ICategoria[] = []; //array inicializado al vacio
     // const categoriasRef = collection(useFirestore(), "Categorias") //seleccionamos la coleccion categorias
-    const categoriasRef = collection(db, "monster-hunter"); //seleccionamos la coleccion categorias
+    const categoriasRef = collection(db, "datos"); //seleccionamos la coleccion categorias
     const CategoriasDocs = await getDocs(categoriasRef) //obtengo todos los datos, es como un select *
     CategoriasDocs.forEach(doc => {
         const categoria = { ...doc.data() }

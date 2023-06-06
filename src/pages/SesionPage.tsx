@@ -19,10 +19,6 @@ export const SesionPage = () => {
           {
             categorias.slice(0, 100).map((categoria) => (
               <>
-              <li key={categoria.name}>{categoria.br_2}</li>
-              <li key={categoria.name}>{categoria.br_1}</li>
-              <li key={categoria.name}>{categoria.br_3}</li>
-
               </>
             ))
           }
