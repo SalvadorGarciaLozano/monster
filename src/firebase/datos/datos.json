@@ -100,30 +100,12 @@
         "logo": "https://images.hdqwalls.com/download/monster-hunter-world-hd-h6-1366x768.jpg"
     },
     {
-        "monstruos": "glavenus",
-        "peso": 20.000,
-        "elemento": "fuego",
-        "debilidad": "Agua",
-        "daño": "muy alto",
-        "especie": "brutos" ,
-        "logo": "https://images.hdqwalls.com/download/monster-hunter-world-hd-h6-1366x768.jpg"
-    },
-    {
-        "monstruos": "deviljho",
+        "monstruos": "cephadrome",
         "peso": 30.000,
-        "elemento": "ninguno",
-        "debilidad": "draco",
-        "daño": "muy alto",
-        "especie": "brutos" ,
-        "logo": "https://images.hdqwalls.com/download/monster-hunter-world-hd-h6-1366x768.jpg"
-    },
-    {
-        "monstruos": "zinogre",
-        "peso": 10.000,
-        "elemento": "rayo",
-        "debilidad": "fuego",
+        "elemento": "agua",
+        "debilidad": "daño fisico",
         "daño": "alto",
-        "especie": "brutos" ,
+        "especie": "acuatico" ,
         "logo": "https://images.hdqwalls.com/download/monster-hunter-world-hd-h6-1366x768.jpg"
     }
 ]

@@ -71,11 +71,13 @@ align-items: center;
     align-items: center;
     gap: 15px;
     flex-direction: column;
+
   }
   
   .card h3 {
     margin-top: 0;
-    color: red;
+    color: white;
+    background-color: black;
   }
   
   .card p {
