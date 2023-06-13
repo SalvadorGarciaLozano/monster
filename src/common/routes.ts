@@ -1,5 +1,5 @@
 import { login } from "../login/login";
-import { CategoriasPage, ContactoPage, HomePage, ProyectosPage, ServiciosPage, SesionPage, Productos } from "../pages/index";
+import { CategoriasPage, ContactoPage, HomePage, ProyectosPage, ServiciosPage, SesionPage} from "../pages/index";
 
 type JSXComponent = () => JSX.Element;
 
@@ -35,7 +35,7 @@ export const routes: Route[] = [
     {
         path: 'sesion',
         component: SesionPage,
-        name: 'wyvern brutos'
+        name: 'dragones ancianos'
     },
     {
         path: '/login',

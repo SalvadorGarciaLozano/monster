@@ -1,4 +1,4 @@
-.caja1{
+/* .caja1{
 
     background-color: red;
     margin-bottom: 20px;
@@ -48,4 +48,39 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-image: url('https://static.wikia.nocookie.net/92e39b2c-ec59-42b6-9314-58f40806855c');
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: red;
+  }
+  
+  .card p {
+    margin-bottom: 8px;
+    color: white(73, 210, 39);
+    background-color: black;
+
 }

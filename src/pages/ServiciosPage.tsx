@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { TextField } from '@mui/material';
 import { ICategoria } from '../interfaces/ICategoria';
-import { cargarprod, getDatos } from '../firebase/FBcategorias';
+import { cargarprod, getCategorias} from '../firebase/FBcategorias';
 import { useForm } from 'react-hook-form';
 import { newCategoria } from '../firebase/FBcategorias';
 import './mh.css'
@@ -17,12 +17,18 @@ export const ServiciosPage = () => {
   }
   const [categorias, setCategorias] = useState<ICategoria[]>([])
   useEffect(() => {
-    getDatos()
+    getCategorias()
       .then(res => {
         console.log(...res)
         setCategorias([...res])
       })
   }, [])
+
+  const estilotabla = {
+    width: '100%',
+    height: 'auto',
+  };
+  
   return (
     
     <section>
@@ -45,7 +51,7 @@ export const ServiciosPage = () => {
               <td>{categoria.elemento}</td>
               <td>{categoria.debilidad}</td>
               <td>{categoria.especie}</td>
-              {<img src={categoria.logo} alt="" /> }
+            {<img src={categoria.logo} alt='' style={estilotabla} /> }
               </tr>
               </>
             ))

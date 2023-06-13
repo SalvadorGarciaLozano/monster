@@ -3,7 +3,7 @@ import { getCategorias } from '../firebase/FBcategorias'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import './home.css'
-import { cargarprod, getDatos } from '../firebase/FBcategorias'
+import { cargarprod} from '../firebase/FBcategorias'
 import { NavLink } from 'react-router-dom'
 // import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -13,19 +13,16 @@ import { ICategoria } from '../interfaces/ICategoria';
 import { useForm } from 'react-hook-form';
 import { newCategoria } from '../firebase/FBcategorias';
 import './mh.css'
-import Button from '@mui/material/Button';
-
-
 
 
 export const HomePage = () => {
-  const { register, handleSubmit } = useForm<ICategoria>();
-  const onAddCategoria = async (dataCategoria: ICategoria) => {
-    console.log(dataCategoria)
-    await newCategoria(dataCategoria)
-    window.location.reload();
-  }
-  const [categorias, setCategorias] = useState<ICategoria[]>([])
+  // const { register, handleSubmit } = useForm<ICategoria>();
+  // const onAddCategoria = async (dataCategoria: ICategoria) => {
+  //   console.log(dataCategoria)
+  //   await newCategoria(dataCategoria)
+  //   window.location.reload();
+  // }
+  const [Categorias, setCategorias] = useState<ICategoria[]>([])
   useEffect(() => {
     getCategorias()
       .then(res => {
@@ -36,7 +33,21 @@ export const HomePage = () => {
  
   return (
     <>
-   
+   <div>
+    <h1>listado de monstruos totales</h1>
+    <div className="card-container">
+      {Categorias.map((categoria) => (
+        <div key={categoria.monstruos} className="card">
+          <h3>monstruo: {categoria.monstruos}</h3>
+          <p>especie: {categoria.especie}</p>
+          <p>debil al: {categoria.debilidad}</p>
+          <p>peso promedio: {categoria.peso} Tons</p>
+          <p>daño:{categoria.daño}</p>
+          {/* Agrega más elementos <p> para mostrar otras propiedades */}
+        </div>
+      ))}
+    </div>
+  </div>
     </>
   )
 }
