@@ -5,5 +5,6 @@ export interface ICategoria {
     elemento: string;
     debilidad: string;
     especie: string; 
-    logo: string
+    logo: string;
+    codigo?: string
 }

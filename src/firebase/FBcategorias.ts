@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, setDoc, doc, query, where } from "firebase/firestore";
+import { getFirestore, collection, getDocs, setDoc, doc, query, where, deleteDoc } from "firebase/firestore";
 import { useFirestore } from "reactfire";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import firebaseConfig from "./firebaseConfig";
@@ -75,7 +75,10 @@ export const newCategoria = async (data: ICategoria) => {
         console.log(error)
     }
 }
-
+export const deletemons = async (codigo: string) => {
+    await deleteDoc(doc(db, "datos", codigo))
+    window.location.reload();
+}
 
 
 // carga masiva

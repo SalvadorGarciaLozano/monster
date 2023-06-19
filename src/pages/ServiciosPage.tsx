@@ -3,10 +3,12 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { TextField } from '@mui/material';
 import { ICategoria } from '../interfaces/ICategoria';
-import { cargarprod, getCategorias} from '../firebase/FBcategorias';
+import { cargarprod, deletemons, getCategorias } from '../firebase/FBcategorias';
 import { useForm } from 'react-hook-form';
 import { newCategoria } from '../firebase/FBcategorias';
 import './mh.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export const ServiciosPage = () => {
   const { register, handleSubmit } = useForm<ICategoria>();
@@ -28,38 +30,50 @@ export const ServiciosPage = () => {
     width: '100%',
     height: 'auto',
   };
-  
+  const handleDeletemonst = (codigo: string | undefined) => {
+    const confirmDelete = window.confirm('¿Estás seguro de borrar este monstruo?');
+    if (confirmDelete && codigo) {
+      deletemons(codigo);
+
+    }
+  };
   return (
-    
+
     <section>
-    <Grid container sx={{ display: 'flex', justifyContent: 'space-around'}}>
-        <Grid item xs={5} sx={{backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
-        <table border={2}>
+      <Grid container sx={{ display: 'flex', justifyContent: 'space-around' }}>
+        <Grid item xs={5} sx={{ backgroundColor: 'purple', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px' }}>
+          <table border={2}>
             <th>Nombre</th>
             <th>Peso</th>
             <th>Daño</th>
             <th>elemento</th>
             <th>debilidad</th>
             <th>especie</th>
-          {
-            categorias.slice(0, 100).map((categoria) => (
-              <>
-              <tr>
-              <td>{categoria.monstruos}</td>
-              <td>{categoria.peso}</td>
-              <td>{categoria.daño}</td>
-              <td>{categoria.elemento}</td>
-              <td>{categoria.debilidad}</td>
-              <td>{categoria.especie}</td>
-            {<img src={categoria.logo} alt='' style={estilotabla} /> }
-              </tr>
-              </>
-            ))
-          }
+            <th>borrar</th>
+            {
+              categorias.slice(0, 100).map((categoria) => (
+                <>
+                  <tr>
+                    <td>{categoria.monstruos}</td>
+                    <td>{categoria.peso}</td>
+                    <td>{categoria.daño}</td>
+                    <td>{categoria.elemento}</td>
+                    <td>{categoria.debilidad}</td>
+                    <td>{categoria.especie}</td>
+                    <td><Button
+                      onClick={() => handleDeletemonst(categoria.codigo)}
+                      id="deletebtn2"
+                      endIcon={<FontAwesomeIcon icon={faTrash} />}
+                    ></Button></td>
+                    {<img src={categoria.logo} alt='' style={estilotabla} />}
+                  </tr>
+                </>
+              ))
+            }
           </table>
         </Grid>
 
-        <Grid item xs={5} sx={{ backgroundColor: 'aqua', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px',}}>
+        <Grid item xs={5} sx={{ backgroundColor: 'aqua', margin: '10px', padding: '12px', height: 'max-content', borderRadius: '20px', }}>
           <h2 id='NewCat'>Añadir nuevos monstruos</h2>
           <form onSubmit={handleSubmit(onAddCategoria)} noValidate >
             <TextField
@@ -126,6 +140,6 @@ export const ServiciosPage = () => {
       </Grid>
     </section>
   );
-    
+
 };
 export default ServiciosPage;
